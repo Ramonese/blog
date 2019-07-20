@@ -6,7 +6,7 @@
         <Post :post="node" />
       </li>
     </ul>
-    <!-- <Pager :info="$page.allWordPressPost.pageInfo" /> -->
+     <Pager :info="$page.allWordPressPost.pageInfo" /> 
   </Layout>
 </template>
 
@@ -19,12 +19,8 @@ query Home ($page: Int) {
     }
     edges {
       node {
-        author {
-          name  
-        }
-        featuredMedia {
-          sourceUrl
-        }
+        
+        
         date
         id
         title
@@ -37,12 +33,12 @@ query Home ($page: Int) {
 </page-query>
 
 <script>
-//import { Pager } from "gridsome";
+import { Pager } from "gridsome";
 import Post from "~/components/Post.vue";
 
 export default {
   components: {
-    //Pager,
+    Pager,
     Post
   },
   metaInfo: {

@@ -53,7 +53,7 @@ query Post ($path: String!) {
 export default {
   metaInfo () {
     return {
-      title: this.$page.wordPressPost.title
+      //title: this.$page.wordPressPost.title
     }
   }
 }
